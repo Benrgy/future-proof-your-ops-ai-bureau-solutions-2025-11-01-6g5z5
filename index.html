@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Future-Proof Your Ops: AI Bureau Solutions - Navigate the complexities of modern business with our cutting-edge AI automation services, built for tomorrow's challenges.">
+    <meta name="keywords" content="AI automation, business solutions, predictive maintenance, autonomous processes, data-driven decisions">
+    <meta name="author" content="AI Bureau Solutions">
+    <title>Future-Proof Your Ops: AI Bureau Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-accent {
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+        }
+        
+        .feature-card {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .feature-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .benefit-item {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .benefit-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta-button {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+        
+        .testimonial-card {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .testimonial-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            transform: translateY(-4px);
+        }
+        
+        .faq-icon {
+            transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .faq-answer {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            max-height: 500px;
+        }
+        
+        .faq-answer.hidden {
+            max-height: 0;
+            overflow: hidden;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu {
+                transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="flex items-center space-x-2">
+                        <div class="w-10 h-10 bg-gradient-to-br from-gray-900 to-gray-700 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-brain text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold text-gray-900">AI Bureau</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-300">Testimonials</a>
+                    <a href="#faq" class="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-300">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden mobile-menu-button p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-gray-900 text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden pb-4 space-y-2">
+                <a href="#features" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-white overflow-hidden pt-20 pb-24 md:pt-32 md:pb-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="space-y-8">
+                    <div class="space-y-6">
+                        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight tracking-tight">
+                            Future-Proof Your Ops: <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-700">AI Bureau Solutions</span>
+                        </h1>
+                        <p class="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl">
+                            Navigate the complexities of modern business with our cutting-edge AI automation services, built for tomorrow's challenges. Transform your operations with intelligent, autonomous systems that work 24/7 to drive your success.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="https://test.com" class="cta-button inline-flex items-center justify-center px-8 py-4 bg-gray-900 text-white font-bold text-lg rounded-lg hover:bg-gray-800 transition-all duration-300">
+                            Get Started Today
+                            <i class="fas fa-arrow-right ml-3"></i>
+                        </a>
+                        <button class="inline-flex items-center justify-center px-8 py-4 border-2 border-gray-900 text-gray-900 font-bold text-lg rounded-lg hover:bg-gray-50 transition-all duration-300">
+                            Learn More
+                            <i class="fas fa-play ml-3"></i>
+                        </button>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="flex items-center gap-8 pt-8 border-t border-gray-200">
+                        <div>
+                            <p class="text-3xl font-bold text-gray-900">500+</p>
+                            <p class="text-gray-600">Enterprise Clients</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-gray-900">99.9%</p>
+                            <p class="text-gray-600">Uptime Guarantee</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-gray-900">40%</p>
+                            <p class="text-gray-600">Cost Reduction</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual -->
+                <div class="relative hidden lg:block">
+                    <div class="relative w-full h-96 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl overflow-hidden shadow-2xl">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center space-y-4">
+                                <i class="fas fa-microchip text-6xl text-gray-400"></i>
+                                <p class="text-gray-500 font-semibold">AI-Powered Operations</p>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 w-12 h-12 bg-green-400 rounded-full opacity-75 animate-pulse"></div>
+                        <div class="absolute bottom-8 left-8 w-8 h-8 bg-blue-400 rounded-full opacity-50"></div>
+                        <div class="absolute top-1/3 left-1/4 w-16 h-16 bg-gray-300 rounded-lg opacity-30"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
+                    Powerful Features Designed for Modern Operations
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our comprehensive suite of AI-driven tools delivers intelligent automation that transforms how your business operates, scales, and competes in the digital age.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1: Predictive Maintenance -->
+                <div class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-gray-900 to-gray-700 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-tools text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Predictive Maintenance</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Harness the power of advanced machine learning algorithms to predict equipment failures before they occur. Our AI continuously monitors your infrastructure, identifying potential issues with unprecedented accuracy and enabling proactive maintenance schedules that eliminate costly downtime and extend asset lifecycles.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Real-time equipment monitoring and diagnostics</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Predictive failure alerts with confidence scoring</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Automated maintenance scheduling and optimization</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Autonomous Processes -->
+                <div class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-gray-900 to-gray-700 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Autonomous Processes</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Delegate repetitive, time-consuming tasks to intelligent autonomous systems that operate with human-like reasoning and adaptability. Our AI agents handle complex workflows, make contextual decisions, and execute actions with precision, freeing your team to focus on strategic initiatives that drive business growth.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Intelligent workflow automation with decision logic</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>24/7 autonomous operation without human intervention</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Adaptive learning and continuous process improvement</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Data-Driven Decisions -->
+                <div class="feature-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-gray-900 to-gray-700 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Data-Driven Decisions</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Transform raw data into actionable insights with our advanced analytics and business intelligence platform. Leveraging AI-powered analytics, we uncover hidden patterns, forecast market trends, and deliver comprehensive dashboards that empower your leadership team to make informed strategic decisions with confidence.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Advanced predictive analytics and forecasting models</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Real-time dashboards with customizable KPI tracking</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>AI-generated insights and strategic recommendations</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
+                    Transformative Benefits That Drive Real Results
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Experience measurable improvements across every aspect of your operations with AI Bureau's comprehensive solutions.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Benefit 1: Minimize Downtime -->
+                <div class="benefit-item bg-gradient-to-br from-white to-gray-50 border border-gray-200 p-8 rounded-xl shadow-md transition-all duration-300">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-gray-900 to-gray-700 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-clock text-white text-2xl"></i>
+                        </div>
+                        <span class="text-4xl font-bold text-gray-900">99.9%</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Minimize Downtime</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Achieve industry-leading uptime with our predictive maintenance and autonomous recovery systems. By identifying and resolving issues before they impact operations, we ensure your critical systems run continuously, protecting revenue and maintaining customer satisfaction.
+                    </p>
+                    <div class="space-y-3 text-gray-600">
+                        <p class="flex items-start">
+                            <i class="fas fa-arrow-right text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Reduce unplanned downtime by up to 80%</span>
+                        </p>
+                        <p class="flex items-start">
+                            <i class="fas fa-arrow-right text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Automated incident response and recovery</span>
+                        </p>
+                        <p class="flex items-start">
+                            <i class="fas fa-arrow-right text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>24/7 monitoring with instant alerts</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 2: Optimize Resource Allocation -->
+                <div class="benefit-item bg-gradient-to-br from-white to-gray-50 border border-gray-200 p-8 rounded-xl shadow-md transition-all duration-300">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-gray-900 to-gray-700 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-chart-pie text-white text-2xl"></i>
+                        </div>
+                        <span class="text-4xl font-bold text-gray-900">40%</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Optimize Resource Allocation</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Leverage AI-powered resource optimization to eliminate waste and maximize efficiency across your entire organization. Our intelligent systems analyze resource utilization patterns and recommend optimal allocation strategies, delivering substantial cost savings without compromising quality.
+                    </p>
+                    <div class="space-y-3 text-gray-600">
+                        <p class="flex items-start">
+                            <i class="fas fa-arrow-right text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Cut operational costs by up to 40%</span>
+                        </p>
+                        <p class="flex items-start">
+                            <i class="fas fa-arrow-right text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Intelligent workforce and asset scheduling</span>
+                        </p>
+                        <p class="flex items-start">
+                            <i class="fas fa-arrow-right text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Real-time capacity planning and forecasting</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3: Enhance Strategic Vision -->
+                <div class="benefit-item bg-gradient-to-br from-white to-gray-50 border border-gray-200 p-8 rounded-xl shadow-md transition-all duration-300">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-gray-900 to-gray-700 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-telescope text-white text-2xl"></i>
+                        </div>
+                        <span class="text-4xl font-bold text-gray-900">360°</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Enhance Strategic Vision</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Gain comprehensive visibility into your business landscape with AI-powered analytics that reveal opportunities and threats. Our advanced insights enable strategic planning with confidence, helping you stay ahead of market trends and competitive pressures.
+                    </p>
+                    <div class="space-y-3 text-gray-600">
+                        <p class="flex items-start">
+                            <i class="fas fa-arrow-right text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Predictive market and trend analysis</span>
+                        </p>
+                        <p class="flex items-start">
+                            <i class="fas fa-arrow-right text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Competitive intelligence and benchmarking</span>
+                        </p>
+                        <p class="flex items-start">
+                            <i class="fas fa-arrow-right text-gray-900 mr-3 mt-1 flex-shrink-0"></i>
+                            <span>Strategic recommendations and scenario planning</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight">
+                        About AI Bureau Solutions
+                    </h2>
+                    <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
+                        <p>
+                            Founded in 2018 by a team of visionary technologists and business strategists, AI Bureau Solutions emerged from a simple yet powerful conviction: that artificial intelligence should be accessible to every organization, regardless of size or industry. Our founders recognized that the most transformative technology of our time was being concentrated in the hands of a few tech giants, leaving countless businesses unable to harness its potential. This realization sparked a mission to democratize enterprise AI, making sophisticated automation and intelligent decision-making available to the broader market. Today, we've grown into a trusted partner for over 500 enterprise clients worldwide, each benefiting from our commitment to innovation and excellence.
+                        </p>
+                        <p>
+                            At our core, we believe that the future belongs to organizations that can seamlessly blend human creativity with machine intelligence. Our mission is to empower businesses to operate smarter, faster, and more sustainably through cutting-edge AI solutions that adapt to their unique challenges. We're driven by core values of transparency, reliability, and customer success—ensuring that every implementation delivers measurable results and lasting value. Our team comprises industry experts, data scientists, and customer advocates who are passionate about solving real-world problems and helping our clients achieve their boldest ambitions in an increasingly complex digital landscape.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative hidden lg:block">
+                    <div class="relative w-full h-96 bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl overflow-hidden shadow-xl">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center space-y-4">
+                                <i class="fas fa-building text-6xl text-gray-400"></i>
+                                <p class="text-gray-500 font-semibold">Enterprise Solutions Since 2018</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
+                    Trusted by Leading Enterprises Worldwide
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover how industry leaders are transforming their operations with AI Bureau Solutions.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white border border-gray-200 p-8 rounded-xl shadow-md transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900">Sarah Chen</h4>
+                            <p class="text-gray-600">VP Operations, TechCorp Industries</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        "AI Bureau's predictive maintenance solution has been transformative for our manufacturing operations. We've reduced unplanned downtime by 75% and saved over $2.3 million in the first year alone. Their autonomous processes handle our complex workflows with remarkable precision, and the team's support has been exceptional throughout our implementation journey."
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white border border-gray-200 p-8 rounded-xl shadow-md transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900">Marcus Thompson</h4>
+                            <p class="text-gray-600">Chief Technology Officer, Global Finance Solutions</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        "The data-driven decision platform has revolutionized how our leadership team operates. We now have real-time visibility into every aspect of our business, enabling us to make strategic decisions with unprecedented confidence. The AI-generated insights have identified opportunities we would have otherwise missed."
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white border border-gray-200 p-8 rounded-xl shadow-md transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900">Elena Rodriguez</h4>
+                            <p class="text-gray-600">Operations Director, Supply Chain Innovations Ltd</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        "Implementing AI Bureau's autonomous processes has freed up 30% of our team's time, allowing them to focus on strategic initiatives rather than repetitive tasks. The system's adaptability and continuous learning capabilities mean it gets better every month. ROI was achieved within the first six months of deployment."
+                    </p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-white border border-gray-200 p-8 rounded-xl shadow-md transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900">James Morrison</h4>
+                            <p class="text-gray-600">Executive Director, Healthcare Systems Network</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        "In the healthcare sector, reliability is paramount. AI Bureau's 99.9% uptime guarantee and predictive maintenance capabilities have given us complete peace of mind. We've optimized our resource allocation across multiple facilities, resulting in better patient care and significant cost reductions. Outstanding partnership."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Find answers to common questions about our AI solutions and services.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg font-bold text-gray-900 text-left">How does your AI maintain data security and compliance?</span>
+                        <i class="faq-icon fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 bg-gray-50">
+                        <p class="text-gray-600 leading-relaxed">
+                            Data security is our highest priority. We implement enterprise-grade encryption for all data in transit and at rest, maintain SOC 2 Type II compliance, and undergo regular third-party security audits. Our systems are built with zero-trust architecture, implement role-based access controls, and maintain comprehensive audit logs. We're HIPAA, GDPR, and CCPA compliant, and all data processing occurs within your specified geographic regions. Our AI models operate on encrypted data whenever possible, and we provide detailed compliance documentation for your regulatory requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg font-bold text-gray-900 text-left">What is the typical implementation timeline for your solutions?</span>
+                        <i class="faq-icon fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 bg-gray-50">
+                        <p class="text-gray-600 leading-relaxed">
+                            Implementation timelines vary based on the complexity of your operations and the scope of automation required. Typically, our phased approach includes: Discovery and Assessment (2-3 weeks), where we analyze your current processes; System Design and Configuration (3-4 weeks), where we customize solutions to your needs; Pilot Deployment (2-3 weeks), where we test in a controlled environment; and Full Rollout (1-4 weeks), depending on your organizational size. Most enterprise clients are fully operational within 8-12 weeks. We've also developed rapid deployment options for specific use cases that can be implemented in as little as 2-3 weeks, with dedicated implementation specialists ensuring smooth transitions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg font-bold text-gray-900 text-left">Can your AI solutions integrate with our existing systems?</span>
+                        <i class="faq-icon fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 bg-gray-50">
+                        <p class="text-gray-600 leading-relaxed">
+                            Absolutely. Our platform is designed with integration as a core principle. We support connections to virtually any enterprise system through APIs, webhooks, and pre-built connectors for popular platforms like SAP, Oracle, Salesforce, Microsoft Dynamics, and countless others. Our integration team has extensive experience with legacy systems and can develop custom connectors when needed. We use industry-standard protocols and maintain comprehensive API documentation. Most integrations are completed during the implementation phase without disrupting your existing operations. We also provide middleware solutions for complex multi-system environments and can handle real-time data synchronization across your entire technology stack.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg font-bold text-gray-900 text-left">How do you measure ROI and success for our implementation?</span>
+                        <i class="faq-icon fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 bg-gray-50">
+                        <p class="text-gray-600 leading-relaxed">
+                            We establish clear, measurable KPIs before implementation begins. Common metrics include: operational cost reduction (typically 20-40%), downtime elimination (measured as percentage reduction), process efficiency gains (time saved per transaction), and revenue impact. We provide real-time dashboards showing your progress toward these targets, with monthly business reviews where we analyze results and optimize performance. Most clients see measurable ROI within 3-6 months, with many achieving payback within the first year. We also track qualitative metrics like employee satisfaction, customer satisfaction improvements, and strategic advantages gained. Our success is directly tied to your success—we maintain ongoing optimization and support until you achieve your desired outcomes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg font-bold text-gray-900 text-left">What level of training and support do you provide to our team?</span>
+                        <i class="faq-icon fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 bg-gray-50">
+                        <p class="text-gray-600 leading-relaxed">
+                            We provide comprehensive training and ongoing support as part of our service. Our training program includes: initial system training for all users, advanced training for administrators and power users, and ongoing webinars on new features and best practices. We provide detailed documentation, video tutorials, and a dedicated support portal accessible 24/7. Your organization receives priority support with guaranteed response times—critical issues within 1 hour, high-priority within 4 hours, standard within 24 hours. We assign a dedicated Customer Success Manager who proactively monitors your system, identifies optimization opportunities, and ensures you're maximizing value. Annual strategy sessions help you plan for future expansion and leverage emerging AI capabilities for competitive advantage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-20 md:py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-900 to-gray-800"></div>
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-gray-700 rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-gray-600 rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-8">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight">
+                    Ready to Transform Your Operations?
+                </h2>
+                <p class="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+                    Join hundreds of enterprise leaders who are already experiencing the power of AI-driven automation. Let's discuss how we can help you future-proof your business.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+                    <a href="https://test.com" class="cta-button inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 font-bold text-lg rounded-lg hover:bg-gray-100 transition-all duration-300">
+                        Start Your Free Consultation
+                        <i class="fas fa-arrow-right ml-3"></i>
+                    </a>
+                    <button class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-bold text-lg rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-300">
+                        Schedule a Demo
+                        <i class="fas fa-calendar ml-3"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
+                    Get in Touch
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Our team is ready to discuss how AI Bureau Solutions can transform your business.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-bold text-gray-900">Contact Information</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Reach out to our team to learn more about our AI automation solutions and how we can help drive your business forward.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-gray-900 to-gray-700 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-gray-900">Email</p>
+                                <a href="mailto:bengrauwde@hotmail.com" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                                    bengrauwde@hotmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-gray-900 to-gray-700 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-gray-900">Phone</p>
+                                <p class="text-gray-600">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-gray-900 to-gray-700 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-gray-900">Office</p>
+                                <p class="text-gray-600">San Francisco, CA | New York, NY | London, UK</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-8 border-t border-gray-200">
+                        <p class="text-gray-600 mb-4 font-semibold">Follow Us</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-10 h-10 bg-gray-900 text-white rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-900 text-white rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-900 text-white rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-900 text-white rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-bold text-gray-900 mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-300" placeholder="Your name">
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-bold text-gray-900 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-300" placeholder="your@email.com">
+                        </div>
+
+                        <div>
+                            <label for="company" class="block text-sm font-bold text-gray-900 mb-2">Company</label>
+                            <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-300" placeholder="Your company">
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-bold text-gray-900 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-300" placeholder="Tell us about your needs..."></textarea>
+                        </div>
+
+                        <button type="submit" class="cta-button w-full px-6 py-3 bg-gray-900 text-white font-bold rounded-lg hover:bg-gray-800 transition-all duration-300">
+                            Send Message
+                            <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-10 h-10 bg-gradient-to-br from-white to-gray-300 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-brain text-gray-900 text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">AI Bureau</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Transforming business operations through intelligent AI automation and data-driven decision making.
+                    </p>
+                </div>
+
+                <!-- Solutions Column -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Solutions</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Predictive Maintenance</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Autonomous Processes</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Data Analytics</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Business Intelligence</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-gray-400">
+                        &copy; 2025 AI Bureau Solutions. All rights reserved.
+                    </p>
+                    <div class="flex gap-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Twitter">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="YouTube">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
